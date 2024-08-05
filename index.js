@@ -30,7 +30,7 @@ function resetEverything() {
   fullPI = fullPIcopy;
   piTextRef.innerHTML = "3.";
   if (learningMode) {
-    learningTextRef.innerHTML = fullPI.charAt(0);
+    learningChar.innerHTML = fullPI.charAt(0);
   }
 }
 
