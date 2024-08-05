@@ -9,3 +9,4 @@ Play it [HERE](https://pi.artomweb.com)
 - Hide caret after incorrect entry
 - Show list of key bindings at bottom when not typing
 - In learning mode, after an incorrect entry, make the digit on the right side of the caret go red so the user practices typing it
+- Prevent score being added if the user changes from learning mode to normal at the end of an attempt
