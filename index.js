@@ -45,6 +45,8 @@ function main() {
     (event) => {
       var digit = event.key;
 
+      clearTimeout(learningTextTimeout);
+
       if (isNaN(digit)) return;
 
       if (!paused || learningMode) {
@@ -59,7 +61,7 @@ function main() {
           if (learningMode) {
             learningChar.innerHTML = fullPI.charAt(0);
             learningChar.classList.add("hidden");
-            setTimeout(() => {
+            learningTextTimeout = setTimeout(() => {
               learningChar.classList?.remove("hidden");
             }, 1500);
           }
