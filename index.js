@@ -1,7 +1,5 @@
 let counter = 0;
 
-let allowedChars = "0123456789";
-
 let piTextRef = document.getElementById("text");
 let counterText = document.getElementById("scoreCount");
 let learningTextRef = document.getElementById("learningText");
@@ -47,7 +45,7 @@ function main() {
 
       clearTimeout(learningTextTimeout);
 
-      if (isNaN(digit)) return;
+      if (isNaN(digit)) return; // if not number key
 
       if (!paused || learningMode) {
         console.log(digit, fullPI.charAt(0));
@@ -90,7 +88,7 @@ function main() {
           } else {
             learningChar.innerHTML = fullPI.charAt(0);
             learningChar.classList.add("hidden");
-            setTimeout(() => {
+            learningTextTimeout = setTimeout(() => {
               learningChar.classList.remove("hidden");
             }, 1500);
           }
