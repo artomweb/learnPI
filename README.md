@@ -2,6 +2,10 @@
 
 Play it [HERE](https://pi.artomweb.com)
 
+- Type the digits of pi
+- Press ENTER to try again
+- Learning mode shows you the next digit after a timeout
+
 ![screenshot](page.png)
 
 ## TODO:
